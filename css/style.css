@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&display=swap');
+
+
+footer ul{
+    font-weight: bold;
+    text-align-last: center;
+
+}
+
+a {
+    color: #168DC0;
+    text-decoration: none;
+}
+
+a:hover {
+    color:black;
+}
+
+
+footer img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-image: url(../media/fondo.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+footer{
+    padding-top: 50px;
+}
+
+
+
+
+.formularioIngresoInput{
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+
+
+
+.botonFormulario{
+    background-color: #168DC0;
+    color: white;
+    transition: all 1.5s;
+    border: none;
+    
+}
+
+.botonFormulario:hover{
+    background-color: #9C9D9C;
+    -webkit-transform: scale(1.03); transform: scale(1.03);
+
+}
+
+
+
+#btnAceptada{
+    font-family: 'Overpass', sans-serif;
+    width: auto;
+    background-color: #168DC0;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+}
+
+#btnAceptada:hover{
+    background-color: green;
+    -webkit-transform: scale(1.03); transform: scale(1.03);
+    border-radius: 10px;
+
+}
+
+#btnAcP{
+    font-family: 'Overpass', sans-serif;
+    width: auto;
+    background-color: #168DC0;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+}
+
+#btnAcP:hover{
+    background-color: #EAC428;
+    -webkit-transform: scale(1.03); transform: scale(1.03);
+    border-radius: 10px;
+
+}
+
+#btnRechazada{
+    font-family: 'Overpass', sans-serif;
+    width: auto;
+    background-color: #168DC0;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+}
+
+#btnRechazada:hover{
+    background-color: red;
+    -webkit-transform: scale(1.03); transform: scale(1.03);
+    border-radius: 10px;
+
+}
+
+.pCotizacion{
+    font-family: 'Overpass', sans-serif;
+    padding-left: 15px;
+    font-style: italic;
+    line-height: 25px;
+    
+}
+
+.botonInicio{
+
+    border: none;
+
+}
+
+.estiloFechaStock{
+    display: flex;
+    float: left;
+    margin-left: auto;
+    font-family: 'Overpass', sans-serif;
+}
+
+table{
+    width: 80%;
+    margin-left: 10%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+
+@media screen and (min-width: 1000px){
+
+    header{
+        display: grid;
+        justify-content: flex-start;
+        padding-left: 30px;
+        animation-name: principal;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+        animation-delay: 2s;
+
+    }
+
+    @keyframes principal{
+        0%{ -webkit-transform: rotateY(360deg);
+            -webkit-transform-style: preserve-3d;
+            transform: rotateY(360deg);
+            transform-style: preserve-3d;
+        }
+        25%{opacity: 0;}
+        50%{}
+        100%{opacity: 1;}
+    
+    }
+
+    #main{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 15px;
+    }
+    .cotizacionAliniar{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Overpass', sans-serif;
+    }
+    .fieldsetCotizacion{
+        display: grid;
+        flex-flow: column;
+    
+    }
+    .cotizacionContenedor{
+        font-family: 'Overpass', sans-serif;
+        display: grid;
+        grid-template-columns: 15% 25% 10% 10% 10% 10%;
+        grid-template-rows: auto;
+        column-gap: 15px;
+        row-gap: 5px;
+        justify-content: space-between;
+     
+    }
+    .item{
+        align-self: flex-start;
+        width: 15%;
+    }
+    .articleIndex{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        justify-content: center;
+    }
+
+    
+
+
+    .botonesIndex{
+        margin-left: 40px;
+        border-radius: 50%;
+        border: none;
+        transition: all 2s;
+       
+    }
+
+    .botonesIndex:hover{
+        -webkit-transform: scale(1.05); transform: scale(1.05);
+
+    }
+    
+    .formularioIngreso{
+        font-family: 'Overpass', sans-serif;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+    
+    li {
+        display: inline;
+        padding-left: 3px;
+        padding-right: 3px;
+        font-family: 'Overpass', sans-serif;
+    
+    }
+
+    table{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    
+    th, td {
+        padding: 10px;
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+    }
+
+
+}
+
+
+@media screen and (max-width: 999px) {
+    header{
+        display: grid;
+        justify-content: center;
+        padding-left: 30px;
+        animation-name: principal;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+        animation-delay: 2s;
+    }
+
+    @keyframes principal{
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+    
+    }
+
+    section article button{
+        margin: 10px;
+
+    }
+
+    ul {
+        list-style-type: none;
+        text-align: left;
+    }
+
+    li{
+        font-family: 'Overpass', sans-serif;
+    }
+
+
+    #main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 15px;
+    }
+    .cotizacionAliniar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        font-family: 'Overpass', sans-serif;
+        margin: 5px;
+    }
+
+    .formCotizacionCel{
+        width: 325px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .cotizacionContenedor{
+        font-family: 'Overpass', sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        row-gap: 5px;
+        
+    }
+
+    .itemCel{
+        display: none;
+    }
+
+    .item{
+        align-self: flex-start;
+        width: 15%;
+    }
+
+    .botonesIndex{
+        margin-left: 10px;
+        border-radius: 50%;
+        transition: all 2s;
+        border: none;
+    
+    }
+
+    .botonesIndex:hover{
+        -webkit-transform: scale(1.1); transform: scale(1.1);
+
+    }
+
+    .articleIndex{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+    }
+    .formularioIngreso{
+        font-family: 'Overpass', sans-serif;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+
+    #table{
+        width: 80%;
+        display: flex;
+        overflow-x: auto;
+        
+
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    
+    th, td {
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+    }
+
+
+
+}

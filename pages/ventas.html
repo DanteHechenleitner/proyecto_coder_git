@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body id="main">
+    <header>
+        <button class="botonInicio">
+
+            <a href="../index.html"><img src="../media/logo.png" width="350" height="100" alt="logo ventas" ></a>
+            
+        </button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="ingreso.html">INICIAR SESION</a></li>
+            <li><a href="ventas.html">VENTAS</a></li>
+            <li><a href="compras.html">COMPRAS</a></li>
+            <li><a href="stock.html">STOCK</a></li>
+            <li><a href="reportes.html">REPORTES</a></li>
+        </ul>
+    
+    </nav>
+    <section class="cotizacionAliniar">
+        <article>
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset class="formCotizacionCel">
+                    <legend style="font-weight: bold">Cotizacion:</legend>
+                    <label for="cotizacion">Cotizacion #:</label>
+                    <input type="text" placeholder="N° Cotizacion">
+                    <label for="fecha">Fecha:</label>
+                    <input type="datetime-local">
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset  class="formCotizacionCel">
+                    <legend style="font-weight: bold">Cliente:</legend>
+                    <input type="submit" value="+" class="botonFormulario">
+                    <label for="cotizacion">Cliente:</label>
+                    <input type="text" placeholder="Cliente">
+                    <label for="CUIT">CUIT:</label>
+                    <input type="number" placeholder="CUIT">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset class="cotizacionContenedor" >
+                    <label class="itemCel" for="codigo">Codigo</label>
+                    <label class="itemCel" for="producto">Producto</label>
+                    <label class="itemCel" for="cantidad">Cantidad</label>
+                    <label class="itemCel" for="precio">Precio</label>
+                    <label class="itemCel" for="IVA">IVA</label>
+                    <label class="itemCel" for="subtotal">Subtotal</label>
+
+                    <input type="text" placeholder="Codigo">
+                    <input type="text" placeholder="Producto">
+                    <input type="number" placeholder="Cantidad">
+                    <input type="number" placeholder="Precio" >
+                    <input type="number" placeholder="IVA" >
+                    <input type="number" placeholder="Subtotal">
+                    <input type="submit" value="+" class="item botonFormulario">
+                </fieldset>
+            </form>
+        </article>
+    </section>
+
+    <article style="padding: 15px">
+        <input type="submit" value="ACEPTADA" id="btnAceptada">
+        <input type="submit" value="PARCIALMENTE" id="btnAcP">
+        <input type="submit" value="RECHAZADA" id="btnRechazada">
+    </article>
+    <p class="pCotizacion">
+        • Todos los precios están expresados en dólares estadounidenses (USD)
+        <br>
+        • Validez de la oferta: 7 días
+        <br>
+        • Plazos de entrega: los indicados precedentemente salvo ventas (supeditado a stock de fábrica)
+        <br>
+        • Lugar de entrega: se entrega en Bahía Blanca, en el transporte seleccionado.
+        <br>
+        • Si cuando se acredite el pago la diferencia entre la cotización del dólar facturado y la del día de acreditación es igual o mayor del 3%,
+        <br>
+        se enviará Nota de Débito por dicha diferencia de cambio.
+        <br>
+        • Garantía según condiciones de fábrica
+    </p>
+
+    <aside>
+
+    </aside>
+    <footer>
+        <ul>
+            <li>TODOS LOS DERECHOS RESERBADOS</li>
+            <img src="../media/pie.png" alt="logo">
+        </ul>
+        
+    </footer>
+
+</body>
+</html>
