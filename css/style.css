@@ -32,8 +32,6 @@ body{
 }
 
 
-
-
 footer{
     padding-top: 50px;
 }
@@ -141,12 +139,12 @@ footer{
     font-family: 'Overpass', sans-serif;
 }
 
-table{
+/*table{
     width: 80%;
     margin-left: 10%;
-}
+}*/
 
-table, th, td {
+/*table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
   }
@@ -155,12 +153,13 @@ th, td {
     padding: 10px;
     text-align: center;
     font-family: 'Overpass', sans-serif;
-}
+}*/
 
 
 
 
 @media screen and (min-width: 1000px){
+
 
     header{
         display: grid;
@@ -212,11 +211,11 @@ th, td {
      
     }
     .item{
-        align-self: flex-start;
+        /*align-self: flex-start;*/
         width: 15%;
     }
     .articleIndex{
-        display: grid;
+        /*display: grid;*/
         grid-template-columns: repeat(4, auto);
         justify-content: center;
     }
@@ -225,7 +224,7 @@ th, td {
 
 
     .botonesIndex{
-        margin-left: 40px;
+        /*margin-left: 40px;*/
         border-radius: 50%;
         border: none;
         transition: all 2s;
@@ -266,7 +265,7 @@ th, td {
         margin-left: 10%;
     }
     
-    table, th, td {
+    /*table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
       }
@@ -275,13 +274,14 @@ th, td {
         padding: 10px;
         text-align: center;
         font-family: 'Overpass', sans-serif;
-    }
-
+    }*/
 
 }
 
 
+
 @media screen and (max-width: 999px) {
+
     header{
         display: grid;
         justify-content: center;
@@ -383,15 +383,15 @@ th, td {
     
     }
 
-    #table{
+    /*#table{
         width: 80%;
         display: flex;
         overflow-x: auto;
         
 
-    }
+    }*/
     
-    table, th, td {
+    /*table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
       }
@@ -399,8 +399,6 @@ th, td {
     th, td {
         text-align: center;
         font-family: 'Overpass', sans-serif;
-    }
-
-
-
+    }*/
 }
+
