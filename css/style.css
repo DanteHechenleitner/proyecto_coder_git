@@ -141,24 +141,6 @@ footer{
     font-family: 'Overpass', sans-serif;
 }
 
-/*table{
-    width: 80%;
-    margin-left: 10%;
-}*/
-
-/*table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-
-th, td {
-    padding: 10px;
-    text-align: center;
-    font-family: 'Overpass', sans-serif;
-}*/
-
-
-
 
 @media screen and (min-width: 1000px){
 
@@ -213,11 +195,9 @@ th, td {
      
     }
     .item{
-        /*align-self: flex-start;*/
         width: 15%;
     }
     .articleIndex{
-        /*display: grid;*/
         grid-template-columns: repeat(4, auto);
         justify-content: center;
     }
@@ -226,7 +206,6 @@ th, td {
 
 
     .botonesIndex{
-        /*margin-left: 40px;*/
         border-radius: 50%;
         border: none;
         transition: all 2s;
@@ -266,17 +245,7 @@ th, td {
         width: 80%;
         margin-left: 10%;
     }
-    
-    /*table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    
-    th, td {
-        padding: 10px;
-        text-align: center;
-        font-family: 'Overpass', sans-serif;
-    }*/
+
 
 }
 
@@ -385,22 +354,5 @@ th, td {
     
     }
 
-    /*#table{
-        width: 80%;
-        display: flex;
-        overflow-x: auto;
-        
-
-    }*/
-    
-    /*table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    
-    th, td {
-        text-align: center;
-        font-family: 'Overpass', sans-serif;
-    }*/
 }
 
