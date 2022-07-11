@@ -34,13 +34,13 @@
         <div class="row">
             <article class="col-md-6">
                 <form>
-                    <div class="row mb-2">
+                    <div class="row mb-2 justify-content-center">
                         <label for="inputEmail3" class="col-sm-4 col-form-label">Orden de Compra N°</label>
                         <div class="col-sm-4">
                         <input type="text" class="form-control" id="inputEmail3">
                         </div>
                     </div>
-                    <div class="row mb-2">
+                    <div class="row mb-2 justify-content-center">
                         <label for="inputPassword3" class="col-sm-4 col-form-label">Fecha</label>
                         <div class="col-sm-4">
                         <input type="datetime-local" class="form-control" id="inputPassword3">
@@ -79,7 +79,7 @@
                             </div>
                           </div>
 
-                        <div class="row mb-2">
+                        <div class="row mb-2 justify-content-center">
                             
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Proveedor</label>
                             <button type="button" class="btn btn-outline-primary col-md-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -89,7 +89,7 @@
                             <input type="text" class="form-control" id="inputEmail3">
                             </div>
                         </div>
-                        <div class="row mb-2">
+                        <div class="row mb-2 justify-content-center">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">CUIT</label>
                             <div class="col-sm-4">
                             <input type="number" class="form-control" id="inputPassword3">
@@ -151,8 +151,34 @@
                   <input type="password" class="form-control" id="inputPassword4">
                 </div>
                 <div clas="col-md-1">
-                    <input type="submit" class="item botonFormulario" id="inputPassword4">
+                    <button type="button" class="btn btn-outline-primary col-md-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                        +
+                    </button>
                 </div>
+                <div class="modal fade " id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content col-sm-3">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Codigo</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Producto</label>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </form>
 
 
