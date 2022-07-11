@@ -17,7 +17,6 @@
 
             <a class="navbar-brand" href="../index.html"><img src="../media/logo.png" width="350" height="100" alt="logo" ></a>
             <span class="navbar-toggler-icon"></span>
-            <!--class="botonInicio" -->
         </button>
     </header>
     <nav>
@@ -31,16 +30,17 @@
     
     </nav>
     <section class="container-fluid">
-            <div class="row">
+            <div class="row ">
                 <article class="col-md-6">
                     <form>
-                        <div class="row mb-2">
+                        <div class="row mb-2 justify-content-center">
                             <label for="inputEmail3" class="col-sm-3 col-form-label">Cotizacion N°</label>
                             <div class="col-sm-4">
                             <input type="text" class="form-control" id="inputEmail3">
                             </div>
                         </div>
-                        <div class="row mb-2">
+
+                        <div class="row mb-2 justify-content-center">
                             <label for="inputPassword3" class="col-sm-3 col-form-label">Fecha</label>
                             <div class="col-sm-4">
                             <input type="datetime-local" class="form-control" id="inputPassword3">
@@ -48,20 +48,11 @@
                         </div>
 
                     </form>
-                      <!-- <form action="" method="post" enctype="multipart/form-data">
-                        <fieldset class="formCotizacionCel">
-                            <label for="cotizacion">Cotizacion #:</label>
-                            <input type="text" placeholder="N° Cotizacion">
-                            <label for="fecha">Fecha:</label>
-                            <input type="datetime-local">
-                        </fieldset> 
-                    </form> -->
         
                 </article>
         
                 <article class="col-md-6">
                     <form action="" method="post" enctype="multipart/form-data">
-                         <!--formCotizacionCel-->
                             <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content col-sm-3">
@@ -87,7 +78,7 @@
                                 </div>
                               </div>
 
-                            <div class="row mb-2">
+                            <div class="row mb-2 justify-content-center">
                                 
                                 <label for="inputEmail3" class="col-sm-2 col-form-label">CLiente</label>
                                 <button type="button" class="btn btn-outline-primary col-md-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -97,19 +88,12 @@
                                 <input type="text" class="form-control" id="inputEmail3">
                                 </div>
                             </div>
-                            <div class="row mb-2">
+                            <div class="row mb-2 justify-content-center">
                                 <label for="inputPassword3" class="col-sm-3 col-form-label">CUIT</label>
                                 <div class="col-sm-4">
                                 <input type="number" class="form-control" id="inputPassword3">
                                 </div>
                             </div>  
-
-
-                            <!--<input type="submit" value="+" class="botonFormulario">
-                            <label for="cotizacion">Cliente:</label>
-                            <input type="text" placeholder="Cliente">
-                            <label for="CUIT">CUIT:</label>
-                            <input type="number" placeholder="CUIT"> -->
 
                     </form>
                 </article>
@@ -145,30 +129,36 @@
                   <input type="password" class="form-control" id="inputPassword4">
                 </div>
                 <div clas="col-md-1">
-                    <input type="submit" class="item botonFormulario" id="inputPassword4">
+                    <button type="button" class="btn btn-outline-primary col-md-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                        +
+                    </button>
                 </div>
+                <div class="modal fade " id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content col-sm-3">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Agregar Producto</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Codigo</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Producto</label>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerar</button>
+                          <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
             </form>
-
-
-            <!--<form action="" method="post" enctype="multipart/form-data">
-
-                <fieldset class="cotizacionContenedor" >
-                    <label class="itemCel" for="codigo">Codigo</label>
-                    <label class="itemCel" for="producto">Producto</label>
-                    <label class="itemCel" for="cantidad">Cantidad</label>
-                    <label class="itemCel" for="precio">Precio</label>
-                    <label class="itemCel" for="IVA">IVA</label>
-                    <label class="itemCel" for="subtotal">Subtotal</label>
-
-                    <input type="text" placeholder="Codigo">
-                    <input type="text" placeholder="Producto">
-                    <input type="number" placeholder="Cantidad">
-                    <input type="number" placeholder="Precio" >
-                    <input type="number" placeholder="IVA" >
-                    <input type="number" placeholder="Subtotal">
-                    <input type="submit" value="+" class="item botonFormulario">
-                </fieldset>
-            </form> -->
         </article>
     </section>
 
