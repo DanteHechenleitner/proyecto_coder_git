@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500&display=swap');
+
+
+footer {
+    padding-top: 50px;
+    ul{ 
+        font-weight: bold;
+        text-align-last: center;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+a {
+    color: $color_irb;
+    text-decoration: none;
+    &:hover {
+        color:black;
+    }
+}
+
+
+body{
+    background-image: url(../media/fondo.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+
+.formularioIngresoInput{
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
+
+
+
+
+.botonFormulario{
+    background-color: $color_irb;
+    color: white;
+    transition: all 1.5s;
+    border: none;
+    width: auto;
+
+    
+}
+
+.botonFormulario:hover{
+    background-color: #9C9D9C;
+    -webkit-transform: scale(1.03); transform: scale(1.03);
+
+}
+
+
+
+#btnAceptada{
+    font-family: $font_irb;
+    width: auto;
+    background-color: $color_irb;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+    &:hover{
+        background-color: green;
+        -webkit-transform: scale(1.03); transform: scale(1.03);
+        border-radius: 10px;
+    }
+}
+
+
+#btnAcP{
+    font-family: $font_irb;
+    width: auto;
+    background-color: $color_irb;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+    &:hover{
+        background-color: #EAC428;
+        -webkit-transform: scale(1.03); transform: scale(1.03);
+        border-radius: 10px;
+    
+    }
+}
+
+
+
+#btnRechazada{
+    font-family: $font_irb;
+    width: auto;
+    background-color: $color_irb;
+    color: white;
+    border: 0px;
+    padding: 5px;
+    margin: 5px;
+    transition: all 1s;
+    &:hover{
+        background-color: red;
+        -webkit-transform: scale(1.03); transform: scale(1.03);
+        border-radius: 10px;
+    
+    }
+}
+
+
+
+.pCotizacion{
+    font-family: $font_irb;
+    padding-left: 15px;
+    font-style: italic;
+    line-height: 25px;
+    
+}
+
+.botonInicio{
+
+    border: none;
+
+}
+
+.estiloFechaStock{
+    display: flex;
+    float: left;
+    margin-left: auto;
+    font-family: $font_irb;
+}
+
+
+
