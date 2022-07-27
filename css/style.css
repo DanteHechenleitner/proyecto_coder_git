@@ -47,7 +47,7 @@ body {
   transform: scale(1.03);
 }
 
-#btnAceptada {
+.btnss, #btnRechazada, #btnAcP, #btnAceptada {
   font-family: "Overpass", sans-serif;
   width: auto;
   background-color: #168DC0;
@@ -57,38 +57,24 @@ body {
   margin: 5px;
   transition: all 1s;
 }
+
+.pruebaMixin {
+  transform: scale(1.03);
+  border-radius: 10px;
+}
+
 #btnAceptada:hover {
   background-color: green;
   transform: scale(1.03);
   border-radius: 10px;
 }
 
-#btnAcP {
-  font-family: "Overpass", sans-serif;
-  width: auto;
-  background-color: #168DC0;
-  color: white;
-  border: 0px;
-  padding: 5px;
-  margin: 5px;
-  transition: all 1s;
-}
 #btnAcP:hover {
   background-color: #EAC428;
   transform: scale(1.03);
   border-radius: 10px;
 }
 
-#btnRechazada {
-  font-family: "Overpass", sans-serif;
-  width: auto;
-  background-color: #168DC0;
-  color: white;
-  border: 0px;
-  padding: 5px;
-  margin: 5px;
-  transition: all 1s;
-}
 #btnRechazada:hover {
   background-color: red;
   transform: scale(1.03);
