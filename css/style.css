@@ -13,12 +13,19 @@ footer img {
   margin-right: auto;
 }
 
-a {
-  color: #168DC0;
+.a {
+  color: white;
   text-decoration: none;
+  margin-left: 10px;
 }
-a:hover {
+.a:hover {
   color: black;
+}
+
+.aNav {
+  background-color: #168DC0;
+  opacity: 60%;
+  font-family: "Overpass", sans-serif;
 }
 
 body {
@@ -41,7 +48,6 @@ body {
   border: none;
   width: auto;
 }
-
 .botonFormulario:hover {
   background-color: #9C9D9C;
   transform: scale(1.03);
@@ -100,20 +106,99 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  header {
-    display: grid;
-    justify-content: flex-start;
-    padding-left: 30px;
-    -webkit-animation-name: principal;
-            animation-name: principal;
+  /*header{
+      display: grid;
+      justify-content: flex-start;
+      padding-left: 30px;
+      animation-name: principal;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s;
+      animation-delay: 2s;
+
+  }
+
+  @keyframes principal{
+      0%{ -webkit-transform: rotateY(360deg);
+          -webkit-transform-style: preserve-3d;
+          transform: rotateY(360deg);
+          transform-style: preserve-3d;
+      }
+      25%{opacity: 0;}
+      50%{}
+      100%{opacity: 1;}
+
+  }*/
+  .arcos_logo, #arcos_2, #arcos_1 {
+    -webkit-animation-name: mover;
+            animation-name: mover;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
   }
-  @-webkit-keyframes principal {
+  .movimiento_letras, #letra_B, #letra_R, #letra_I {
+    opacity: 0;
+    -webkit-animation-name: mover_letra;
+            animation-name: mover_letra;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    /*animation-duration: 4.5s;*/
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #letra_I {
+    -webkit-animation-duration: 4.5s;
+            animation-duration: 4.5s;
+  }
+  #letra_R {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+  }
+  #letra_B {
+    -webkit-animation-duration: 5.5s;
+            animation-duration: 5.5s;
+  }
+  #punto {
+    opacity: 0;
+    -webkit-animation-name: mover_letra;
+            animation-name: mover_letra;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  #nombre {
+    opacity: 0;
+    -webkit-animation-name: mover_frase;
+            animation-name: mover_frase;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 7s;
+            animation-duration: 7s;
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes mover {
     0% {
       -webkit-transform: rotateY(360deg);
       -webkit-transform-style: preserve-3d;
@@ -121,13 +206,19 @@ body {
       transform-style: preserve-3d;
     }
     25% {
-      opacity: 0;
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
     }
     100% {
       opacity: 1;
     }
   }
-  @keyframes principal {
+  @keyframes mover {
     0% {
       -webkit-transform: rotateY(360deg);
       -webkit-transform-style: preserve-3d;
@@ -135,8 +226,64 @@ body {
       transform-style: preserve-3d;
     }
     25% {
-      opacity: 0;
+      opacity: 0.25;
     }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes mover_letra {
+    0% {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes mover_letra {
+    0% {
+      -webkit-transform: rotateY(180deg);
+      -webkit-transform-style: preserve-3d;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes mover_frase {
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes mover_frase {
     100% {
       opacity: 1;
     }
