@@ -15,12 +15,21 @@ footer {
 
 }
 
-a {
-    color: $color_irb;
+.a {
+    color: white;
     text-decoration: none;
+    margin-left: 10px;
     &:hover {
-        color:black;
+        color: black;
     }
+}
+
+
+.aNav{
+    background-color: $color_irb;
+    opacity: 60%;
+    font-family: $font_irb;
+
 }
 
 
@@ -49,15 +58,13 @@ body{
     transition: all 1.5s;
     border: none;
     width: auto;
-
+    &:hover{
+        background-color: $color2_irb;
+        -webkit-transform: scale(1.03); transform: scale(1.03);
+    }
     
 }
 
-.botonFormulario:hover{
-    background-color: #9C9D9C;
-    -webkit-transform: scale(1.03); transform: scale(1.03);
-
-}
 
 
 .btnss{
