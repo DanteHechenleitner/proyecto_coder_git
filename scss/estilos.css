@@ -35,6 +35,34 @@ body {
   background-attachment: fixed;
 }
 
+/* Animancion imagen fondo*/
+.animacionDiv {
+  background-image: url(../media/prueba.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-animation: img-background 10s linear infinite alternate;
+          animation: img-background 10s linear infinite alternate;
+  height: 200px;
+}
+
+@-webkit-keyframes img-background {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom left;
+  }
+}
+
+@keyframes img-background {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom left;
+  }
+}
 .formularioIngresoInput {
   width: 90%;
   height: 30px;
@@ -105,29 +133,362 @@ body {
   font-family: "Overpass", sans-serif;
 }
 
-@media screen and (min-width: 1000px) {
-  /*header{
-      display: grid;
-      justify-content: flex-start;
-      padding-left: 30px;
-      animation-name: principal;
-      animation-timing-function: ease-in-out;
-      animation-duration: 3s;
-      animation-delay: 2s;
+/* reportes en barras */
+.caja-padre {
+  width: 100%;
+}
 
+.contenedor-reportes {
+  width: 100%;
+  padding: 5px 5px 10px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: "Overpass", sans-serif;
+}
+
+.titulo-reportes {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reportes-areas:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.detalles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.menu {
+  position: relative;
+  border: 1px solid #168DC0;
+  border-radius: 20px;
+}
+
+.menu div {
+  position: relative;
+  width: 0;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #168DC0;
+}
+
+/*animacion barras reportes*/
+.animaciones-barras, #taller-menu, #soldadura-menu, #era-menu {
+  -webkit-animation-name: barra-era;
+          animation-name: barra-era;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#soldadura-menu {
+  -webkit-animation-name: barra-soldadura;
+          animation-name: barra-soldadura;
+}
+
+#taller-menu {
+  -webkit-animation-name: barra-taller;
+          animation-name: barra-taller;
+}
+
+@-webkit-keyframes barra-era {
+  100% {
+    width: 15%;
   }
+}
 
-  @keyframes principal{
-      0%{ -webkit-transform: rotateY(360deg);
-          -webkit-transform-style: preserve-3d;
-          transform: rotateY(360deg);
-          transform-style: preserve-3d;
-      }
-      25%{opacity: 0;}
-      50%{}
-      100%{opacity: 1;}
+@keyframes barra-era {
+  100% {
+    width: 15%;
+  }
+}
+@-webkit-keyframes barra-soldadura {
+  100% {
+    width: 75%;
+  }
+}
+@keyframes barra-soldadura {
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes barra-taller {
+  100% {
+    width: 10%;
+  }
+}
+@keyframes barra-taller {
+  100% {
+    width: 10%;
+  }
+}
+/*Reporets ciculares*/
+.circular-contenedor {
+  margin-top: 2em;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #fff;
+}
 
-  }*/
+.progreso-circular {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin: auto;
+  background: linear-gradient(0deg, #00DDFF 50%, rgba(0, 221, 255, 0.2) 50%);
+  position: relative;
+  transform: rotate(136.8deg);
+}
+.progreso-circular:before {
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff content-box;
+  border-radius: 50%;
+  padding: 0.5em;
+  box-sizing: border-box;
+  font-size: 2rem;
+  color: #111;
+  text-align: center;
+  line-height: 8rem;
+  transform: rotate(0);
+  -webkit-animation-name: circular2;
+          animation-name: circular2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.progreso-circular:after {
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(transparent 50%, #fff 50%);
+  transform: scale(1.1) rotate(0);
+  text-align: center;
+  color: #111;
+  line-height: 13rem;
+  -webkit-animation-name: circular1;
+          animation-name: circular1;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes circular1 {
+  100% {
+    transform: scale(1.1) rotate(-136.8deg);
+    content: "76%";
+  }
+}
+@keyframes circular1 {
+  100% {
+    transform: scale(1.1) rotate(-136.8deg);
+    content: "76%";
+  }
+}
+@-webkit-keyframes circular2 {
+  100% {
+    transform: rotate(-136.8deg);
+    content: "EQUIPOS";
+  }
+}
+@keyframes circular2 {
+  100% {
+    transform: rotate(-136.8deg);
+    content: "EQUIPOS";
+  }
+}
+
+/* barras card 3*/
+.contenedor-reportes2 {
+  width: 100%;
+  padding: 5px 5px 10px;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  font-family: "Overpass", sans-serif;
+}
+
+.cantidad {
+  text-align: right;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.barras-meses, .ventas-agosto, .ventas-julio, .ventas-junio {
+  display: flex;
+  min-width: 0%;
+  background-color: #04aa6d;
+  -webkit-animation-name: barra-junio;
+          animation-name: barra-junio;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  justify-content: space-between;
+}
+
+.ventas-julio {
+  background-color: blue;
+  -webkit-animation-name: barra-julio;
+          animation-name: barra-julio;
+}
+
+.ventas-agosto {
+  background-color: blueviolet;
+  -webkit-animation-name: barra-agosto;
+          animation-name: barra-agosto;
+}
+
+@-webkit-keyframes barra-junio {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 48%;
+  }
+}
+
+@keyframes barra-junio {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 48%;
+  }
+}
+@-webkit-keyframes barra-julio {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 62%;
+  }
+}
+@keyframes barra-julio {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 62%;
+  }
+}
+@-webkit-keyframes barra-agosto {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 86%;
+  }
+}
+@keyframes barra-agosto {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 86%;
+  }
+}
+/*botonos para cards*/
+.boton-card {
+  position: relative;
+  height: auto;
+  width: auto;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  background-color: #168DC0;
+  overflow: hidden;
+  transition: all 500ms ease;
+  z-index: 0;
+  border: 1px solid #168DC0;
+  font-weight: 300px;
+  /*botones no utilizados*/
+}
+.boton-card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  background-color: #9C9D9C;
+  transition: all 500ms ease;
+  z-index: -1;
+}
+.boton-card-1:before {
+  width: 0;
+  height: 100%;
+}
+.boton-card-1:hover {
+  color: white;
+  font-weight: 300px;
+}
+.boton-card-1:hover:before {
+  width: 100%;
+}
+.boton-card-2:before {
+  left: -520px;
+  right: 0;
+  width: 100%;
+  height: 150%;
+  transition: all 1s ease;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px #168DC0, 0 0 20px #168DC0, 0 0 20px #168DC0;
+}
+.boton-card-2:hover:before {
+  left: 520px;
+}
+.boton-card-3:hover {
+  -webkit-animation: boton3 500ms 1;
+          animation: boton3 500ms 1;
+  background-color: #9C9D9C;
+  color: white;
+}
+
+@-webkit-keyframes boton3 {
+  0% {
+    box-shadow: 0 0 0 0 #9C9D9C;
+  }
+  100% {
+    box-shadow: 0 0 2px 4px #9C9D9C;
+  }
+}
+
+@keyframes boton3 {
+  0% {
+    box-shadow: 0 0 0 0 #9C9D9C;
+  }
+  100% {
+    box-shadow: 0 0 2px 4px #9C9D9C;
+  }
+}
+@media screen and (min-width: 1000px) {
   .arcos_logo, #arcos_2, #arcos_1 {
     -webkit-animation-name: mover;
             animation-name: mover;
@@ -148,7 +509,6 @@ body {
             animation-name: mover_letra;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
-    /*animation-duration: 4.5s;*/
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
     -webkit-animation-iteration-count: 1;
@@ -321,12 +681,14 @@ body {
     justify-content: center;
   }
   .botonesIndex {
+    opacity: 40%;
     border-radius: 50%;
     border: none;
     transition: all 2s;
   }
   .botonesIndex:hover {
     transform: scale(1.05);
+    opacity: 100%;
   }
   .formularioIngreso {
     font-family: "Overpass", sans-serif;
@@ -348,9 +710,9 @@ body {
     padding-right: 3px;
     font-family: "Overpass", sans-serif;
   }
-  table {
-    width: 80%;
-    margin-left: 10%;
+  .table-d {
+    min-width: 1000px;
+    padding-left: 150px;
   }
 }
 @media screen and (max-width: 999px) {
@@ -448,5 +810,29 @@ body {
     flex-direction: column;
     justify-content: center;
     justify-items: center;
+  }
+  #no-more-tables tbody, tr, td {
+    display: block;
+    font-size: "Overpass", sans-serif;
+  }
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  #no-more-tables td {
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  #no-more-tables td:before {
+    content: attr(data-title);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+  }
+  #no-more-tables tr {
+    border-bottom: 1px solid #ccc;
   }
 }/*# sourceMappingURL=estilos.css.map */
