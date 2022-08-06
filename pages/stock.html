@@ -10,7 +10,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
 
 </head>
 <body id="main">
@@ -80,7 +80,7 @@
 
             </a>
             <span class="navbar-toggler-icon"></span>
-            <!--class="botonInicio" -->
+           
         </button>
 
     </header>
@@ -93,15 +93,49 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-              <a class="a" href="ingreso.html">INICIAR SESION</a>
-              <a class="a" href="ventas.html">VENTAS</a>
-              <a class="a" href="compras.html">COMPRAS</a>
-              <a class="a" href="stock.html">STOCK</a>
-              <a class="a" href="reportes.html">REPORTES</a>
+                <a class="a"  data-bs-toggle="modal" data-bs-target="#exampleModa4" href="">INICIAR SESION</a>
+                <a class="a" href="ventas.html">VENTAS</a>
+                <a class="a" href="compras.html">COMPRAS</a>
+                <a class="a" href="stock.html">STOCK</a>
+                <a class="a" href="reportes.html">REPORTES</a>
             </div>
           </div>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">INICIAR SESION</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+    
+                        <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+    
+                        <input type="button" value="INGRESAR" class="botonFormulario formularioIngresoInput">
+                        <input type="submit" value="OLVIDE MI CONTRASEÑA" class="botonFormulario formularioIngresoInput">
+    
+    
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+          </div>
+        </div>
+    </div>
+
 
     <section class="container-fluid">
         <article class="row justify-content-center">
@@ -113,18 +147,19 @@
                     <input type="datetime-local" class="form-control" id="inputPassword3">
                     </div>
                 </div>
-                <!--<legend style="font-weight: bold">STOCK:</legend>
-                    <label for="fecha">Fecha:</label>
-                    <input type="datetime-local"> -->
-
+               
             </form>
         </article>
     </section>
-    <section class="container-fluid">
-        <article class="row col-md-10">
-            <table class="table">
-                <thead>
-                    <tr class="table-info">
+
+
+    
+    <section class="bg-light p-5">
+        <h3 class="pb-2">STOCK ACTUALIZADO</h3>
+        <div class="table-responsive" id="no-more-tables">
+            <table class="table bg-white">
+                <thead class="bg-dark text-light">
+                    <tr>
                         <th scope="col">#</th>
                         <th scope="col">Codigo</th>
                         <th scope="col">Producto</th>
@@ -136,24 +171,58 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>K-1496</td>
-                        <td>Invertec 275TP</td>
-                        <td>2</td>
-                        <td>$ 842,68</td>
-                        <td>10.5%</td>
-                        <td>$ 1685,36</td>
+                        <td data-title="#">1</td>
+                        <td data-title="Codigo">K-1496</td>
+                        <td data-title="Producto">Invertec 275TP</td>
+                        <td data-title="STOCK">2 unidades</td>
+                        <td data-title="Precio">$ 842,68</td>
+                        <td data-title="IVA">10.5%</td>
+                        <td data-title="Subtotal">$ 1685,36</td>
+                    </tr>
+                    <tr>
+                        <td data-title="#">2</td>
+                        <td data-title="Codigo">ED038475</td>
+                        <td data-title="Producto">Pipeliner 8p+ 4mm</td>
+                        <td data-title="STOCK">113.4 kg</td>
+                        <td data-title="Precio">$ 12.48</td>
+                        <td data-title="IVA">21%</td>
+                        <td data-title="Subtotal">$ 1415,23</td>
+                    </tr>
+                    <tr>
+                        <td data-title="#">3</td>
+                        <td data-title="Codigo">K-1485</td>
+                        <td data-title="Producto">Invertec 175TP</td>
+                        <td data-title="STOCK">4 unidades</td>
+                        <td data-title="Precio">$ 309,85</td>
+                        <td data-title="IVA">10.5%</td>
+                        <td data-title="Subtotal">$ 1239.40</td>
+                    </tr>
+                    <tr>
+                        <td data-title="#">4</td>
+                        <td data-title="Codigo">EDS8574</td>
+                        <td data-title="Producto">Inershil 207</td>
+                        <td data-title="STOCK">807 kg</td>
+                        <td data-title="Precio">$ 22.4</td>
+                        <td data-title="IVA">21%</td>
+                        <td data-title="Subtotal">$ 18076.8</td>
+                    </tr>
+                    <tr>
+                        <td data-title="#">5</td>
+                        <td data-title="Codigo">K-1878</td>
+                        <td data-title="Producto">Ranger 260MPX</td>
+                        <td data-title="STOCK">1 unidades</td>
+                        <td data-title="Precio">$ 4698.52</td>
+                        <td data-title="IVA">10.5%</td>
+                        <td data-title="Subtotal">$ 4698.52</td>
                     </tr>
                 </tbody>
             </table>
-        </article>
+        </div>
     </section>
+    
 
-    <section>
-        <article>
 
-        </article>
-    </section>
+
     <aside>
 
     </aside>

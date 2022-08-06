@@ -10,7 +10,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
 
 </head>
 <body id="main">
@@ -80,7 +80,7 @@
 
             </a>
             <span class="navbar-toggler-icon"></span>
-            <!--class="botonInicio" -->
+           
         </button>
 
     </header>
@@ -92,7 +92,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ">
-              <a class="a" href="ingreso.html">INICIAR SESION</a>
+              <a class="a"  data-bs-toggle="modal" data-bs-target="#exampleModa4" href="">INICIAR SESION</a>
               <a class="a" href="ventas.html">VENTAS</a>
               <a class="a" href="compras.html">COMPRAS</a>
               <a class="a" href="stock.html">STOCK</a>
@@ -101,15 +101,231 @@
           </div>
         </div>
     </nav>
-    <section>
-        <article>
-        </article>
-        <article>
-        </article>
-    </section>
-    <aside>
 
-    </aside>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">INICIAR SESION</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                      </div>
+  
+                      <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                      </div>
+  
+                      <input type="button" value="INGRESAR" class="botonFormulario formularioIngresoInput">
+                      <input type="submit" value="OLVIDE MI CONTRASEÑA" class="botonFormulario formularioIngresoInput">
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+        </div>
+      </div>
+  </div>
+
+
+    <section class="container-fluid">
+        <div class="row justify-content-around">
+          <div class="card" style="width: 18rem;">
+            <img src="../media/card_1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title titulo-reportes">VENTAS EN %</h5>
+              <p class="card-text">Porcentaje de ventas por Area.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="boton-card boton-card-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Dashboard
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">VENTAS EN %</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="caja-padre">
+                      <div class="contenedor-reportes">
+                        <h3 class="titulo-reportes">VENTAS EN %</h3>
+                        <div class="reportes-areas">
+                          <div class="detalles">
+                            <span>ERA</span>
+                            <span>15%</span>
+          
+                        </div>
+          
+                          <div class="menu">
+                            <div id="era-menu">
+          
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="reportes-areas">
+                          <div class="detalles">
+                            <span>SOLDADURA</span>
+                            <span>75%</span>
+          
+                        </div>
+          
+                          <div class="menu">
+                            <div id="soldadura-menu">
+          
+                            </div>
+                          </div>
+                        </div>
+          
+                        <div class="reportes-areas">
+                          <div class="detalles">
+                            <span>TALLER</span>
+                            <span>10%</span>
+          
+                          </div>
+          
+                          <div class="menu">
+                            <div id="taller-menu">
+          
+                            </div>
+                          </div>
+                        </div>
+          
+                      </div>
+          
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+
+            <img src="../media/card_2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title titulo-reportes">VENTAS EN %</h5>
+              <p class="card-text">Porcentaje de ventas de equipos.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="boton-card boton-card-1" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+                Dashboard
+              </button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabe1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">% VENTA DE EQUIPOS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="circular-contenedor">
+          
+                      <div class="contenedor-reportes">
+                        <h3 class="titulo-reportes"> ARTICULOS EN % </h3>
+                        <div >
+                          <div class="progreso-circular equipos"></div>
+              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="../media/card_3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title titulo-reportes">VENTAS $</h5>
+              <p class="card-text">Ventas en Dolares.</p>
+              <!-- Button trigger modal -->
+              <button type="button" class="boton-card boton-card-1" data-bs-toggle="modal" data-bs-target="#exampleModa3">
+                Dashboard
+              </button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">VENTAS $</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="caja-padre">
+                        <div class="contenedor-reportes2">
+                          <h3 class="titulo-reportes">VENTAS $</h3>
+            
+                          <div class="cantidad">
+                            <div class="ventas-junio">
+                              <span>Junio</span>
+                              <span>$12.000</span>
+            
+                            </div>
+                          </div>
+                          <div class="cantidad">
+                            <div class="ventas-julio">
+                              <span>Julio</span>
+                              <span>$4.000</span>
+            
+                            </div>
+                          </div>
+                          <div class="cantidad">
+                            <div class="ventas-agosto">
+                              <span>Agosto</span>
+                              <span>$20.000</span>
+            
+                            </div>
+                          </div>
+                          
+            
+                        </div>
+            
+                      </div>
+  
+  
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+
+      
     <footer class="container-fluid">
         <ul>
             <li>TODOS LOS DERECHOS RESERBADOS</li>
