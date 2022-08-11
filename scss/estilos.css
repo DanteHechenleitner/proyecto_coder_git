@@ -33,19 +33,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-animation: img-background 10s linear infinite alternate;
+          animation: img-background 10s linear infinite alternate;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 /* Animancion imagen fondo*/
-.animacionDiv {
-  background-image: url(../media/prueba.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  -webkit-animation: img-background 10s linear infinite alternate;
-          animation: img-background 10s linear infinite alternate;
-  height: 200px;
-}
-
 @-webkit-keyframes img-background {
   from {
     background-position: top right;
@@ -54,7 +48,6 @@ body {
     background-position: bottom left;
   }
 }
-
 @keyframes img-background {
   from {
     background-position: top right;

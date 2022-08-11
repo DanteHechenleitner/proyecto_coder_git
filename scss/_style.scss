@@ -38,19 +38,14 @@ body{
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    animation: img-background 10s linear infinite alternate;
+    animation-delay: 6s;
     
 }
 
 
 /* Animancion imagen fondo*/
-.animacionDiv{
-    background-image: url(../media/prueba.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    animation: img-background 10s linear infinite alternate;
-    height: 200px;
-}
+
 
 @keyframes img-background {
     from {
